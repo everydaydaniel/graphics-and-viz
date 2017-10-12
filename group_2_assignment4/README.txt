@@ -1,0 +1,3 @@
+- decompress the sketch_171001a.zip file
+- go into the sketch_171001a folder 
+- play the sketch_171001a.pde file

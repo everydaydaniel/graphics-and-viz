@@ -1,0 +1,23 @@
+This animation just illustrated an urban city.
+The included classes are Car(), Sun(), and Cloud().
+The car class instantiates car objects of differient
+colors and speeds. The wheels also rotate at different
+speeds. The sun class instantiates a sun object that
+moves in the xy plane and also rotates. The cloud
+class instantiates cloud object that move in the
+xy plane and also rain at certain points. The color
+of the clouds turn darker as they begin to rain.
+We were initially going to do a bird class instead
+of a sun class but decided there might not be enough
+space in the sky for both multiple clouds and
+multiple birds.
+
+Who did what:
+
+Harsh Bharucha:
+	The background scene
+	The Car() Class
+Daniel Herrera:
+	The Cloud() Class
+Shadiat Yinka Ojelade:
+	The Sun() Class
