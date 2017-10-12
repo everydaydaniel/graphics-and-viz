@@ -3,18 +3,32 @@ Car myCar2;
 
 Sun mySun;
 
+Cloud cloud1;
+Cloud cloud2;
+Cloud cloud3;
+
 
 void setup () {
   myCar = new Car(255, 0, 867, 1);
   myCar2 = new Car(200, 1650, 807, -2);
   mySun = new Sun(10, 600);
+  cloud1 = new Cloud();
+  cloud2 = new Cloud();
+  cloud3 = new Cloud();
   size(1700,975);
   background(52,206,245);
 }
 
 void draw () {
   background(52,206,245);
+
   mySun.display();
+  cloud1.move();
+  cloud1.display();
+  cloud2.move();
+  cloud2.display();
+  cloud3.move();
+  cloud3.display();
   fill(0,208,69);
   rect(0,650,1700,650);
   fill(162,162,162);
