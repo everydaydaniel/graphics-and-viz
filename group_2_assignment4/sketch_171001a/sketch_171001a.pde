@@ -1,14 +1,20 @@
 Car myCar;
 Car myCar2;
 
+Sun mySun;
+
+
 void setup () {
   myCar = new Car(255, 0, 867, 1);
   myCar2 = new Car(200, 1650, 807, -2);
+  mySun = new Sun(10, 600);
   size(1700,975);
   background(52,206,245);
 }
 
 void draw () {
+  background(52,206,245);
+  mySun.display();
   fill(0,208,69);
   rect(0,650,1700,650);
   fill(162,162,162);
