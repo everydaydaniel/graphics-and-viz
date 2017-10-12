@@ -11,7 +11,7 @@ class Cloud {
   float direction;
   int weight_mult = 1;
   float weight = 255;
-  Drop[] rain = new Drop[200];
+  Drop[] rain = new Drop[300];
   boolean isRaining = false;
   boolean isincreasing = false;
 
@@ -56,7 +56,7 @@ class Cloud {
    if (this.direction > 0){
     if((this.cloudX + this.cloud_width) > (width + this.cloud_width + 80)){
       this.cloud_width = random(150, width/3);
-      this.cloud_height = random(50, height/5);
+      this.cloud_height = random(50, height/20);
       this.cloudX = random(width);
       this.cloudY = random(height/4);
       this.cloudX = (this.cloud_width + 80) * -1;
@@ -72,7 +72,12 @@ class Cloud {
     updateWeight();
     noStroke();
     fill(weight);
-    ellipse(cloudX + (cloud_width/2), cloudY + (cloud_height/2), cloud_width + 200, cloud_height + 100);
+    // populate the rectanglewith ellipes to make itlook like a cloud
+    random(cloudX, cloudX+ cloud_width);
+    random(cloudY,cloudY + cloud_height);
+    random(100, cloud_width);
+    random(100, cloud_height);
+    ellipse(cloudX + (cloud_width/2),cloudY + (cloud_height/2), cloud_width + 200, cloud_height + 100);
     rect(cloudX, cloudY, cloud_width, cloud_height);
 
 
