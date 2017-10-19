@@ -1,3 +1,3 @@
-- decompress the sketch_171001a.zip file
-- go into the sketch_171001a folder 
-- play the sketch_171001a.pde file
+- decompress the group_2_assignment4.zip file
+- go into the folder 
+- play the group_2_assignment4.pde file

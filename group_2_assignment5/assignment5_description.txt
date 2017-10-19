@@ -1,0 +1,14 @@
+This animation illustrates a mini orbital system using 3D objects (P3D) of the the earth rotating on its axis, the moon orbiting the earth and rotating on its own axis, followed to a hierarchal level of the orbital satellite around the moon and rotating on its axis. The spaceship follows in and hovers over the earth while rotating on its axis. 
+The Moon() class along with the earth creates a spherical shape object that uses implementation of texture to wrap the photo around it.  They both rotate in the xyz plane. 
+The satellite required the class to be an extension of the moon rather than its own individual class, so it can work in that hierarchal state. The satellite was also used as an extra credit opportunity for an .obj object. Understanding the right materials to implement the obj was the biggest challenge. The spaceship object is another .obj extension of the satellite and moon class.
+
+Who did what:
+
+Harsh Bharucha:
+	The Moon() Class
+	The earth object
+	The Satellite() Class
+Daniel Herrera:
+	The Spaceship() Class
+Shadiat Yinka Ojelade:
+	The Satellite() Class 

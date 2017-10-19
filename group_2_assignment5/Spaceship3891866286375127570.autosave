@@ -1,0 +1,24 @@
+class Spaceship extends Moon{
+  float xpos, ypos, rotaion, R2;
+  PShape spaceship;
+
+  Spaceship(){
+    
+  }
+  
+  void display() {
+    angle += 2;
+    
+    pushMatrix();
+    rotate(angle);
+    shape(spaceship, xpos+100, ypos, spaceship.width*25, spaceship.height*25);
+    popMatrix();
+    popMatrix();
+    popMatrix();
+    R = R + 0.01;
+    R2 = R2 + 0.01;
+  }
+
+
+
+}

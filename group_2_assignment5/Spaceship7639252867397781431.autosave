@@ -1,0 +1,23 @@
+class Spaceship{
+  float xpos, ypos, rotaion;
+  PShape spaceship;
+
+  Spaceship(){
+
+  }
+
+  void display(){
+    pushMatrix();
+    float Yrot = mouseX;
+    println(Yrot);
+    rotateX(838);
+    rotateY(Yrot);
+    translate(700,100,0);
+    shape(spaceship,xpos+100,ypos,spaceship.width*25, spaceship.height*25);
+    popMatrix();
+
+  }
+
+
+
+}
