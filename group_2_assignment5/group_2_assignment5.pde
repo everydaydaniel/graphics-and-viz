@@ -31,8 +31,8 @@ void setup() {
   mySatellite.sYpos = 0;
   mySatellite.satellite = loadShape("Satellite.obj");
 
-  mySpaceship.xpos = 300;
-  mySpaceship.ypos = 300;
+  mySpaceship.xpos = 500;
+  mySpaceship.ypos = 0;
   mySpaceship.spaceship = loadShape("SS1.obj");
 
 

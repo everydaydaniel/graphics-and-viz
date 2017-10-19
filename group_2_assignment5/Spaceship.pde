@@ -7,18 +7,18 @@ class Spaceship extends Moon{
 
   void display() {
     pushMatrix();
-    translate(700,500);
+    translate(700,500,0);
     pushMatrix();
     rotate(R);
     translate(xPos,yPos);
-    pushMatrix();
-    rotate(R2);
-    shape(spaceship, xpos, ypos, spaceship.width*25, spaceship.height*25);
-    popMatrix();
+    rotate(R);
+    //pushMatrix();
+    //rotate(R2);
+    shape(spaceship, xpos, ypos, spaceship.width*5, spaceship.height*5);
+    //popMatrix();
     popMatrix();
     popMatrix();
     R += .01;
-    R2 += .01;
   }
 
 }
