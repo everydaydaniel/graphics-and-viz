@@ -2,15 +2,11 @@ class Moon {
   float xPos, yPos, radius, R;
   PShape moon;
   PImage moonImg;
-  PVector v;
   
   Moon() {}
   
   void display() {
-    pushMatrix();
-    // perpendicular vector
-    PVector = v2 = new PVector(1,0,1);
-    PVector p = v.cross(---);
+    pushMatrix();    
     translate(700, 500, 0);
     pushMatrix();
     rotateY(R);
